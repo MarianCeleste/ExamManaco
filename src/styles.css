@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+:root{ --primary:#0b6fb6; --bg:#fff; --text:#111; --maxw:1100px; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial;}
+body{margin:0;color:var(--text);background:var(--bg);line-height:1.4;}
+.container{max-width:var(--maxw);margin:0 auto;padding:1rem;}
+.site-header{border-bottom:1px solid #eee;}
+.header-top{display:flex;justify-content:space-between;align-items:center;padding:1rem;}
+.brand{margin:0;font-size:1.25rem;}
+.tagline{margin:0;font-size:.9rem;color:#555;}
+.main-nav{padding:.5rem 1rem;}
+.nav-list{list-style:none;display:flex;gap:1rem;padding:0;margin:0;}
+.nav-item{padding:.4rem .6rem;border-radius:.25rem;}
+.hero{background:#f2f8ff;padding:2rem 1rem;text-align:center;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem;}
+.producto{border:1px solid #eee;padding:1rem;border-radius:.5rem;}
+.producto img{width:100%;height:auto;display:block;border-radius:4px;}
+.precio{font-weight:700;}
+.site-footer{text-align:center;padding:1rem;font-size:.9rem;border-top:1px solid #eee;margin-top:2rem;}
+@media(max-width:600px){.nav-list{flex-direction:column;gap:.4rem}.header-top{flex-direction:column;gap:.4rem;align-items:flex-start}}
